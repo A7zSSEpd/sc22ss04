@@ -6,4 +6,4 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, world!"
+      - run: ../../bash kadai4_test.sh
