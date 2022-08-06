@@ -6,4 +6,7 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - run: bash ../../bash kadai4_test.sh
+      - uses: actions/checkout@v2 
+      - name: kadai4_test
+        run: bash ../../bash kadai4_test.sh
+      
