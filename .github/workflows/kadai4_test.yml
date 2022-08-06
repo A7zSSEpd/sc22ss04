@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2 
       - name: kadai4_test
-        run: bash ../../bash kadai4_test.sh
+        run: bash ../../kadai4_test.sh
       
