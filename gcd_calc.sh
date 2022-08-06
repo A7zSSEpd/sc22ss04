@@ -1,9 +1,13 @@
 #!/usr/bin/bash
 #プロンプトをechoを使って表示
-echo -n "Input to Value X: "	# 入力受付
-read X 							# 入力値を変数Xへ代入
-echo -n "Input to Value Y: "	# 入力受付
-read Y 							# 入力値を変数Yへ代入
+#echo -n "Input to Value X: "	# 入力受付
+#read X 							# 入力値を変数Xへ代入
+#echo -n "Input to Value Y: "	# 入力受付
+#read Y 							# 入力値を変数Yへ代入
+echo Value X= $1
+echo Value Y= $2
+X=$1
+Y=$2
 gcd=0                           # 公約数初期値
 
 
