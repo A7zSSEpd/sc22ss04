@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #プロンプトをechoを使って表示
 #echo -n "Input to Value X: "	# 入力受付
 #read X 							# 入力値を変数Xへ代入
@@ -7,19 +7,9 @@
 
 X=$1
 Y=$2
+
 echo Value X= $X
 echo Value Y= $Y
-
-if [ `echo " $1 > 0 " | bc` == 0 ]; then
-    echo X is not natural number.
-    X="Decimal"
-fi
-
-if [ `echo " $2 > 0 " | bc` == 0 ]; then
-    echo Y is not natural number.
-    Y="Decimal"
-fi
-
 gcd=0                           # 公約数初期値
 
 
@@ -44,11 +34,11 @@ if [[ $X -gt 0 ]]; then
                 done
             fi
         done
-#    else
-#        echo Y is not natural number.
+    else
+        echo Y is not natural number.
     fi
-#else
-#    echo X is not natural number.
+else
+    echo X is not natural number.
 fi
 
 if [ $gcd -ge 1 ]; then     # gcdが1以上なら最大公約数として表示
