@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 #プロンプトをechoを使って表示
 #echo -n "Input to Value X: "	# 入力受付
 #read X 							# 入力値を変数Xへ代入
