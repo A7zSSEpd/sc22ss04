@@ -1,12 +1,12 @@
 #!/bin/bash
 #プロンプトをechoを使って表示
 #echo -n "Input to Value X: "	# 入力受付
-#read X 							# 入力値を変数Xへ代入
+#read X 						# 入力値を変数Xへ代入
 #echo -n "Input to Value Y: "	# 入力受付
-#read Y 							# 入力値を変数Yへ代入
+#read Y 						# 入力値を変数Yへ代入
 
-X=$1
-Y=$2
+X=$1                            # 引数1
+Y=$2                            # 引数2
 
 echo Value X= $X
 echo Value Y= $Y
@@ -27,7 +27,7 @@ if [[ $X -gt 0 ]]; then
                     remainder_Y=$[$Y % $i]          # Y余り
 
                     if [[ $divisor_Y -ge 0 ]] && [[ $remainder_Y = 0 ]]; then # Yの商が1以上の自然数&その余りが0の時
-                        if [[ $gcd -le $i ]]; then    # 計算前後の約数比較
+                        if [[ $gcd -le $i ]]; then  # 計算前後の約数比較
                             gcd=$i                  # 計算後の約数が大きかったら最大公約数gcdへ代入
                         fi
                     fi
